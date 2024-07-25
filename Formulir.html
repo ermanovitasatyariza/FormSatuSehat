@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KEMENTRIAN KESEHATAN REPUBLIK INDONESIA</title>
+</head>
+
+<body>
+    <header>
+        <h3>KEMENTRIAN KESEHATAN REPUBLIK INDONESIA</h3>
+    </header>               
+    <form>
+        <fieldset>
+            <legend><h3>Data Pasien</h3></legend>
+            <table>
+            <tr>
+                <td>        
+                    <p>
+                        <label for="nik">NIK: </label>
+                        <input type="text" name="nik"/>
+                    <p>
+                        <label for="norm">No. RM: </label>
+                        <input type="text" name="koders" placeholder="tujuh tigit kode RS"/>
+                        <input type="text" name="norm" placeholder="No. RM"/>
+                    </p>
+                    <p>
+                        <label for="namadepan">Nama Depan: </label>
+                        <input type="text" name="namadepan"/>
+                    </p>
+                    <p>
+                        <label for="namatengah">Nama Tengah: </label>
+                        <input type="text" name="namatengah"/>
+                    </p>
+                    <p>
+                        <label for="namakeluarga">Nama Keluarga: </label>
+                        <input type="text" name="namakeluarga"/>
+                    </p>
+                    <p>
+                        <label for="tempatlahir">Tempat Lahir: </label>
+                        <input type="text" name="tempatlahir"/>
+                    </p>
+                    <p>
+                        <label for="tanggallahir">Tanggal Lahir: </label>
+                        <input type="date" name="tanggallahir"/>
+                    </p>
+                    <p>
+                        <label for="alamattetap">Alamat Tetap: </label>
+                        <textarea name="alamattetap"></textarea>
+                    </p>
+                    <p>
+                        <label for="povkabkot">Pov/Kab/Kot: </label>
+                        <input type="text" name="povkabkot"/>
+                    </p>
+                    <p>
+                        <label for="kodepos">Kode Pos: </label>
+                        <input type="text" name="kodepos"/>
+                    </p>
+                    <p>
+                        <label for="alamat_s">Alamat Sementara: </label>
+                        <textarea name="alamat_s"></textarea>
+                    </p>
+                    <p>
+                        <label for="povkabkot_s">Pov/Kab/Kot: </label>
+                        <input type="text" name="povkabkot_s"/>
+                    </p>
+                    <p>
+                        <label for="kodepos_s">Kode Pos: </label>
+                        <input type="text" name="kodepos_s"/>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <label for="jeniskelamin">Jenis Kelamin: </label>
+                        <select name="jeniskelamin">
+                            <option>Laki-Laki</option>
+                            <option>Perempuan</option>
+                            <option>Tdk. diketahui</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="ras">Ras: </label>
+                        <select name="ras">
+                            <option>Tdk. diketahui</option>
+                            <option>Melayu</option>
+                            <option>Non-Melayu</option>
+                            <option>Mongoloid</option>
+                            <option>Non-Mongoloid</option>
+                        </select>
+                    <p>
+                        <label for="agama">Agama: </label>
+                        <select name="agama">
+                            <option>Tdk. diketahui</option>
+                            <option>Islam</option>
+                            <option>Katolik</option>
+                            <option>Protestan</option>
+                            <option>Hindu</option>
+                            <option>Budha</option>
+                            <option>Lain-lain</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="status">Status Pernikahan: </label>
+                        <select name="status">
+                            <option>Menikah</option>
+                            <option>Janda/Duda</option>
+                            <option>Belum Menikah</option>
+                            <option>Tdk. diketahui</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="pekerjaan">Pekerjaan: </label>
+                        <select name="pekerjaan">
+                            <option>Tdk. diketahui</option>
+                            <option>Staf Kantor</option>
+                            <option>Petani</option>
+                            <option>Buruh Pabrik</option>
+                            <option>Militer/Polisi</option>
+                            <option>Ibu Rumah Tangga</option>
+                            <option>Tenaga Medis</option>
+                            <option>Guru</option>
+                            <option>Pedagang</option>
+                            <option>Lain-lain</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="notelp">No Telp/Hp: </label>
+                        <input type="text" name="notelp"/>
+                    </p>
+                </td>
+            </tr>
+            </table>
+        <p>
+            <input type="submit" value="SIMPAN" name="simpan" />
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend><h3>Data Tumor</h3></legend>
+            <p>
+                <label for="topografi">Topografi: </label>
+                <i>(lokasi tumor) : </i>
+                <input type="text" name="topografi"/>
+                <span>ICD-0 Kode C</span>
+            </p>
+            <p>
+                <label for="morfologi">Morfologi: </label>
+                <i>(jenis tumor) : </i>
+                <input type="text" name="morfologi"/>
+                <span>ICD-0 Kode M</span>
+            </p>
+            <p>
+                <label for="perilakutumor">Perilaku Tumor: </label>
+                <select name="perilakutumor">
+                    <option>Jinak</option>
+                    <option>Borderline</option>
+                    <option>Insitu</option>
+                    <option>Malignant</option>
+                    <option>Tdk.diketahui</option>
+                </select>
+            </p>
+            <p>
+                <label for="grade">Grade: </label>
+                <select name="grade">
+                    <option>Diff. baik</option>
+                    <option>Diff. sedang</option>
+                    <option>Diff. buruk</option>
+                    <option>Tidak berdiff</option>
+                    <option>Positif sel T</option>
+                    <option>Positif sel B</option>
+                    <option>Sel Null</option>
+                    <option>Sel NK</option>
+                    <option>Tdk. diaplikasikan</option>
+                    <option>Dediff</option>
+                </select>
+            </p>
+            <p>
+                <label for="basisdiagnosist">Basis diagnosis tervalid: </label>
+                <select name="basisdiagnosist">
+                    <option>Sertifikat kematian</option>
+                    <option>Klinis</option>
+                    <option>Lab, X-ray, Endoskopi, Isotopes Angiography, EEG</option>
+                    <option>Operasi/ otopsi tanpa histologi</option>
+                    <option>Tes Biokimia/ imunologi/ tumor marker</option>
+                    <option>Sitologi/ Hematologi</option>
+                    <option>Histologi metastatis/ anak sebar</option>
+                    <option>Histologi tumor primer</option>
+                    <option>Otopsi dengan histologi</option>
+                    <option>Tidak diketahui</option>
+                </select>
+            </p>
+            <p>
+                <label for="stadium">Stadium: </label>
+                <select name="stadium">
+                    <option>1</option>
+                    <option>1A</option>
+                    <option>1B</option>
+                    <option>1C</option>
+                    <option>2</option>
+                    <option>2A</option>
+                    <option>2B</option>
+                    <option>2C</option>
+                    <option>3</option>
+                    <option>3A</option>
+                    <option>3B</option>
+                    <option>3C</option>
+                    <option>4</option>
+                    <option>4A</option>
+                    <option>4B</option>
+                    <option>4C</option>
+                    <option>0</option>
+                    <option>Tdk. dpt ditentukan</option>
+                    <option>Tdk. diaplikasikan</option>
+                    <option>Tdk. diketahui</option>
+                </select>
+            </p>
+            <p>
+                <label for="penyebaransblmterapi">Penyebaran tumor sebelum terapi: </label>
+                <i>Clinical ext. of disease before treatment</i>
+                <select name="penyebaransblmterapi">
+                    <option>In Situ</option>
+                    <option>Terlokalisir (Localized)</option>
+                    <option>Organ sekitar (Direct extension)</option>
+                    <option>KBG sekitar (Regional LN involvement)</option>
+                    <option>Organ dan KBG sekitar (Direct extension with regional LN involvement)</option>
+                    <option>Metastatis jauh (Distant metastates)</option>
+                    <option>Tdk. diaplikasikan (Not applicable)</option>
+                    <option>Tdk. diketahui (Unknown)</option>
+                </select>
+            </p>
+            <p>
+                <label for="tnm">TNM: </label>
+                <input type="text" name="tnm"/>
+            </p>
+            <p>
+                <label for="terapipelapor">Terapi di institusi pelapor: </label>
+                <i>(Treatment at reporting institution)</i>
+                <select name="terapipelapor">
+                    <option>Tdk. terapi</option>
+                    <option>Operasi</option>
+                    <option>Radioterapi</option>
+                    <option>Kemoterapi</option>
+                    <option>Terapi target</option>
+                    <option>Terapi imun</option>
+                    <option>Terapi hormon</option>
+                    <option>Terapi lain</option>
+                    <option>Tdk. diketahui</option>
+                </select>
+            </p>
+            <p>
+                <table><b>Metastatis/ anak sebar jauh:</b><br>
+                    <tr>
+                        <td>                            
+                            <label><input type="checkbox" name="metastatis" value="Tdk. Ada">Tdk. ada</label><br>
+                            <label><input type="checkbox" name="metastatis" value="KGB jauh">KGB jauh</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Tulang">Tulang</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Hati">Hati</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Paru">Paru</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Otak">Otak</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Ovarium">Ovarium</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Kulit">Kulit</label><br>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="metastatis" value="Lambung">Lambung</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Sumsum tlg.">Sumsum tlg.</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Endokrin">Endokrin</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Kavum pleura">Kavum pleura</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Buli-buli">Buli-buli</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Kolon">Kolon</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Lain-lain">Lain-lain</label><br>
+                            <label><input type="checkbox" name="metastatis" value="Tdk. diketahui">Tdk. diketahui</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+            <p>
+                <table><b>Lateralitas:</b><br>
+                    <tr>
+                        <td>                            
+                            <label><input type="checkbox" name="lateralitas" value="Kanan">Kanan</label><br>
+                            <label><input type="checkbox" name="lateralitas" value="Kiri">Kiri</label><br>
+                            <label><input type="checkbox" name="lateralitas" value="Tengah">Tengah</label><br>
+                            <label><input type="checkbox" name="lateralitas" value="Kanan & kiri">Kanan & kiri</label><br>
+                        </td>
+                        <td>
+                            <label><input type="checkbox" name="lateralitas" value="Banyak tempat">Banyak tempat</label><br>
+                            <label><input type="checkbox" name="lateralitas" value="Tdk. diaplikasikan">Tdk. diaplikasikan</label><br>
+                            <label><input type="checkbox" name="lateralitas" value="Tdk. diketahuin">Tdk. diketahuin</label><br>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+            <p>
+                <label for="jumlah">Jumlah: </label>
+                <input type="text" name="jumlah"/>
+            </p>
+            <p>
+                <label for="tanggaldiag">Tanggal Diagnosis: </label>
+                <input type="date" name="tanggaldiag"/>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend><h3>Data Sumber/ Follow Up</h3></legend>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Tgl. Periksa</th>
+                    <th>Nama Rumah Sakit</th>
+                    <th>Kode Rumah Sakit</th>
+                    <th>Unit ID</th>
+                    <th>Unit</th>
+                    <th>No. PA/LAB</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <p>
+                <label for="kesimpulan">Kesimpulan: </label>
+                <textarea name="kesimpulan"></textarea>
+            </p>
+            <table>
+                <tr>
+                    <td>
+                    <p>
+                        <label for="tglmasuk">Tgl.masuk: </label>
+                        <input type="date" name="tglmasuk"/>
+                    </p>
+                    </td>
+                    <td>
+                    <p>
+                        <label for="nmregister">Nama Register: </label>
+                        <input type="text" name="nmregister"/>
+                    </p>
+                    </td>
+                    <td>
+                    <p>
+                        <label for="nmverif">Nama verifikator: </label>
+                        <input type="text" name="nmverif"/>
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p>
+                        <label for="tglkontak">Tgl.kontak terakhir: </label>
+                        <input type="date" name="tglkontak"/>
+                    </p>
+                    </td>
+                    <td>
+                    <p>
+                        <label for="tglabstraksi">Tgl.abstraksi: </label>
+                        <input type="date" name="tglabstraksi"/>
+                    </p>
+                    </td>
+                    <td>
+                    <p>
+                        <label for="tglverif">Tgl.verifikator: </label>
+                        <input type="date" name="tglverif"/>
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <p>
+                        <label for="status">Status: </label>
+                        <select name="status">
+                            <option>Hidup</option>
+                            <option>Meninggal</option>
+                            <option>Tidak diketahui</option>
+                        </select>
+                    </p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </body>
+</html>
