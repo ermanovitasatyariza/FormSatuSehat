@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Satu Sehat</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>    
+      <!-- As a heading -->
+       
+      <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">KEMENTERIAN KESEHATAN REPUBLIK INDONESIA</span>
+        </div>
+      </nav>
+      <br>      
+      </div>
+      <br>  
+
+      <div class="container">
+      <form>
+        <div class="card">
+          <div class="card-header text-center bg-primary-subtle">
+            <b>DATA PASIEN</b>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                  <div class="row mb-3">
+                    <label for="nik" class="col-3 col-form-label ">NIK</label>
+                      <div class="col">
+                          <input type="text" class="form-control" id="nik" name="nik">
+                      </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="norm" class="col-3 col-form-label">No. RM</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="norm" name="norm">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label class="col-3 col-form-label">Nama Depan | Nama Tengah </label>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Nama Depan" name="nmdpn">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Nama Tengah" name="nmtngh">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="nmklrg" class="col-3 col-form-label">Nama Keluarga</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="nmklrg" name="nmklrg">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="tmptlhr" class="col-3 col-form-label">Tempat Lahir</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="tmptlhr" name="tmptlhr">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="tgllhr" class="col-3 col-form-label">Tanggal Lahir </label>        
+                    <div class="col">
+                      <input type="date" class="form-control" id="tgllhr" name="tgllhr">
+                    </div>    
+                  </div>
+                  <div class="row mb-3">
+                    <label for="umr" class="col-3 col-form-label">Umur</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="umr" name="umr">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="almt" class="col-3 col-form-label">Alamat Tetap</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="almt" name="almt">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for=" " class="col-sm-3 col-form-label"></label>
+                    <div class="col-6 col-sm-3">
+                      <div class="col">
+                        <label for="kabkot" class="form-label">Kabupaten/Kota</label>
+                        <input type="text" class="form-control" id="kabkot" name="kabkot">
+                      </div>
+                      <div class="col">
+                        <label for="prvns" class="form-label">Provinsi</label>
+                        <input type="text" class="form-control" id="prvns" name="prvns">
+                      </div>
+                      <div class="col">
+                        <label for="kdps" class="form-label">Kode Pos</label>
+                        <input type="text" class="form-control" id="kdps" name="kdps">
+                      </div>
+                    </div>    
+                  </div>
+                  <div class="row mb-3">
+                    <label for="almt_s" class="col-sm-3 col-form-label">Alamat Sementara</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="almt_s" name="almt_s">
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for=" " class="col-sm-3 col-form-label"></label>
+                    <div class="col-6 col-sm-3">
+                      <div class="col">
+                        <label for="kabkot_s" class="form-label">Kabupaten/Kota</label>
+                        <input type="text" class="form-control" id="kabkot_s" name="kabkot_s">
+                      </div>
+                      <div class="col">
+                        <label for="prvns_s" class="form-label">Provinsi</label>
+                        <input type="text" class="form-control" id="prvns_s" name="prvns_s">
+                      </div>
+                      <div class="col">
+                        <label for="kdps_s" class="form-label">Kode Pos</label>
+                        <input type="text" class="form-control" id="kdps_s" name="kdps_s">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="row mb-3">
+                    <label for="jnsklmn" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                    <div class="col">
+                      <select class="form-select" id="jnsklmn" name="jnsklmn">
+                          <option value="Tdk. diketahui">9. Tdk. diketahui</option>
+                          <option value="Laki-Laki">1. Laki-Laki</option>
+                          <option value="Perempuan">2. Perempuan</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="ras" class="col-sm-3 col-form-label">Ras</label>
+                    <div class="col">
+                      <select class="form-select" id="ras" name="ras">
+                          <option value="Tdk. diketahui">00. Tdk. diketahui</option>
+                          <option value="Melayu">1. Melayu</option>
+                          <option value="Non-Melayu">2. Non-Melayu</option>
+                          <option value="Mongoloid">3. Mongoloid</option>
+                        <option value="Non-Mongoloid">4. Non-Mongoloid</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="agm" class="col-sm-3 col-form-label">Agama</label>
+                    <div class="col">
+                      <select class="form-select" id="agm"  name="agm">
+                        <option value="Tdk. diketahui">0. Tdk. diketahui</option>
+                        <option value="Islam">1. Islam</option>
+                        <option value="Katolik">2. Katolik</option>
+                        <option value="Protestan">3. Protestan</option>
+                        <option value="Hindu">4. Hindu</option>
+                        <option value="Budha">5. Budha</option>
+                        <option value="Lain-lain">9. Lain-lain</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="stts_prnkhn" class="col-sm-3 col-form-label">Status Pernikahan</label>
+                    <div class="col">
+                      <select class="form-select" id="stts_prnkhn" name="stts_prnkhn">
+                          <option value="Tdk. diketahui">9. Tdk. diketahui</option>
+                          <option value="Menikah">1. Menikah</option>
+                          <option value="Janda/Duda">2. Janda/Duda</option>
+                          <option value="Belum Menikah">3. Belum Menikah</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="pkrjn" class="col-sm-3 col-form-label">Pekerjaan</label>
+                    <div class="col">
+                      <select class="form-select" id="pkjrn"  name="pkjrn">
+                          <option value="Tdk. diketahui">00. Tdk. diketahui</option>
+                          <option value="Staf Kantor">01. Staf Kantor</option>
+                          <option value="Petani">02. Petani</option>
+                          <option value="Buruh Pabrik">03. Buruh Pabrik</option>
+                          <option value="Militer/Polisi">04. Militer/Polisi</option>
+                          <option value="Ibu Rumah Tangga">05. Ibu Rumah Tangga</option>
+                          <option value="Tenaga Medis">06. Tenaga Medis</option>
+                          <option value="Guru">07. Guru</option>
+                          <option value="Pedagang">08. Pedagang</option>
+                          <option value="Lain-lain">09. Lain-lain</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="notelp" class="col-sm-3 col-form-label">No Telp/HP</label>
+                    <div class="col">
+                      <input type="text" class="form-control" id="notelp" name="notelp">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card-footer text-body-secondary bg-primary-subtle">            
+          </div>
+        </div>
+        <br>     
+
+        <!-- As a heading -->
+        <div class="card">
+          <div class="card-header text-center bg-primary-subtle">
+            <b>DATA TUMOR</b>
+          </div>
+          <div class="card-body">
+          <div class="row mb-3">
+            <label for="topografi" class="col-sm-2 col-form-label">Topografi :</label>
+            <i>(lokasi tumor)</i>
+            <div class="col">
+              <input type="text" class="form-control" id="topografi" name="topografi">
+              <span>ICD-0 Kode C</span>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="morfologi" class="col-sm-2 col-form-label">Morfologi :</label>
+            <i>(jenis tumor) </i>
+            <div class="col">
+              <input type="text" class="form-control" id="morfologi" name="morfologi">
+              <span>ICD-0 Kode M</span>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="prlktmr" class="col-sm-2 col-form-label">Perilaku Tumor</label>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="prlktmr"  name="prlktmr">
+                  <option value="Jinak">0. Jinak</option>
+                  <option value="Borderline">1. Borderline</option>
+                  <option value="Insitu">2. Insitu</option>
+                  <option value="Malignant">3. Malignant</option>
+                  <option value="Tdk.diketahui">9. Tdk.diketahui</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="grade" class="col-sm-2 col-form-label">Grade</label>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="grade"  name="grade">
+                  <option value="Diff. baik">01. Diff. baik</option>
+                  <option value="Diff. sedang">02. Diff. sedang</option>
+                  <option value="Diff. buruk">03. Diff. buruk</option>
+                  <option value="Tidak berdiff">04. Tidak berdiff</option>
+                  <option value="Positif sel T">05. Positif sel T</option>
+                  <option value="Positif sel B">06. Positif sel B</option>
+                  <option value="Sel Null">07. Sel Null</option>
+                  <option value="Sel NK">08. Sel NK</option>
+                  <option value="Tdk. diaplikasikan">09. Tdk. diaplikasikan</option>
+                  <option value="Dediff">10. Dediff</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="bss_dg_trvld" class="col-sm-2 col-form-label">Basis diagnosis tervalid</label>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="bss_dg_trvld" name="bss_dg_trvld">
+                  <option value="Sertifikat kematian">0. Sertifikat kematian</option>
+                  <option value="Klinis">1. Klinis</option>
+                  <option value="Lab, X-ray, Endoskopi, Isotopes Angiography, EEG">2. Lab, X-ray, Endoskopi, Isotopes Angiography, EEG</option>
+                  <option value="Operasi/ otopsi tanpa histologi">3. Operasi/ otopsi tanpa histologi</option>
+                  <option value="Tes Biokimia/ imunologi/ tumor marker">4. Tes Biokimia/ imunologi/ tumor marker</option>
+                  <option value="Sitologi/ Hematologi">5. Sitologi/ Hematologi</option>
+                  <option value="Histologi metastatis/ anak sebar">6. Histologi metastatis/ anak sebar</option>
+                  <option value="Histologi tumor primer">7. Histologi tumor primer</option>
+                  <option value="Otopsi dengan histologi">8. Otopsi dengan histologi</option>
+                  <option value="Tidak diketahui">9. Tidak diketahui</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="stdm" class="col-sm-2 col-form-label">Stadium</label>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="stdm" name="stdm">
+                <option value="1">001.1</option>
+                <option value="1A">002.1A</option>
+                <option value="1B">003.1B</option>
+                <option value="1C">004.1C</option>
+                <option value="2">005.2</option>
+                <option value="2A">006.2A</option>
+                <option value="2B">007.2B</option>
+                <option value="2C">008.2C</option>
+                <option value="3">009.3</option>
+                <option value="3A">010.3A</option>
+                <option value="3B">011.3B</option>
+                <option value="3C">012.3C</option>
+                <option value="4">013.4</option>
+                <option value="4A">014.4A</option>
+                <option value="4B">015.4B</option>
+                <option value="4C">016.4C</option>
+                <option value="0">017.0</option>
+                <option value="Tdk. dpt ditentukan">018.Tdk. dpt ditentukan</option>
+                <option value="Tdk. diaplikasikan">019.Tdk. diaplikasikan</option>
+                <option value="Tdk. diketahui">020.Tdk. diketahui</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="pnybrn_sblm_trp" class="col-sm-3 col-form-label">Penyebaran tumor sebelum terapi :</label>
+            <i>(Clinical ext. of disease before treatment)</i>
+            <div class="col">
+              <select class="form-select" id="pnybrn_sblm_trp" name="pnybrn_sblm_trp">
+                <option value="In Situ">In Situ</option>
+                <option value="Terlokalisir (Localized)">Terlokalisir (Localized)</option>
+                <option value="Organ sekitar (Direct extension)">Organ sekitar (Direct extension)</option>
+                <option value="KBG sekitar (Regional LN involvement)">KBG sekitar (Regional LN involvement)</option>
+                <option value="Organ dan KBG sekitar (Direct extension with regional LN involvement)">Organ dan KBG sekitar (Direct extension with regional LN involvement)</option>
+                <option value="Metastatis jauh (Distant metastates)">Metastatis jauh (Distant metastates)</option>
+                <option value="Tdk. diaplikasikan (Not applicable)">Tdk. diaplikasikan (Not applicable)</option>
+                <option value="Tdk. diketahui (Unknown)">Tdk. diketahui (Unknown)</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="tnm" class="col-sm-2 col-form-label">TNM</label>
+            <div class="col-6 col-sm-3">
+              <input type="text" class="form-control" id="tnm" name="tnm">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="trp_plpr" class="col-sm-2 col-form-label">Terapi di institusi pelapor :</label>
+            <i>(Treatment at reporting institution)</i>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="trp_plpr"  name="trp_plpr">
+                <option value="Tdk. terapi">00. Tdk. terapi</option>
+                <option value="Operasi">01. Operasi</option>
+                <option value="Radioterapi">02. Radioterapi</option>
+                <option value="Kemoterapi">03. Kemoterapi</option>
+                <option value="Terapi target">04. Terapi target</option>
+                <option value="Terapi imun">05. Terapi imun</option>
+                <option value="Terapi hormon">06. Terapi hormon</option>
+                <option value="Terapi lain">07. Terapi lain</option>
+               <option value="Tdk. diketahui">09. Tdk. diketahui</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="metastatis" class="col-sm-2 col-form-label">Metastatis/ anak sebar jauh</label>
+            <div class="col-6 col-sm-3">
+            <select class="form-select" id="metastatis" name="metastatis">
+                <option value="Tdk. Ada">00. Tdk. ada</option>
+                <option value="KGB jauh">01. KGB jauh</option>
+                <option value="Tulang">02. Tulang</option>
+                <option value="Hati">03. Hati</option>
+                <option value="Paru">04. Paru</option>
+                <option value="05. Otak">05. Otak</option>
+                <option value="06. Ovarium">06. Ovarium</option>
+                <option value="07. Kulit">07. Kulit</option>
+                <option value="08. Lambung">08. Lambung</option>
+                <option value="09. Sumsum tlg.">09. Sumsum tlg.</option>
+                <option value="10. Endokrin">10. Endokrin</option>
+                <option value="11. Kavum pleura">11. Kavum pleura</option>
+                <option value="12. Buli-buli">12. Buli-buli</option>
+                <option value="13. Kolon">13. Kolon</option>
+                <option value="14. Lain-lain">14. Lain-lain</option>
+                <option value="15. Tdk. diketahui">15. Tdk. diketahui</option>
+            </select>
+            </div>    
+          </div>
+          <div class="row mb-3">
+            <label for="lateralitas" class="col-sm-2 col-form-label">Lateralitas</label>
+            <div class="col-6 col-sm-3">
+            <select class="form-select" id="lateralitas" name="lateralitas">
+               <option value="9. Tdk. diketahuin">9. Tdk. diketahui</option>
+                <option value="1. Kanan">1. Kanan</option>
+                <option value="2. Kiri">2. Kiri</option>
+                <option value="3. Tengah">3. Tengah</option>
+                <option value="4. Kanan dan kiri">4. Kanan dan kiri</option>
+                <option value="5. Banyak">5. Banyak</option>
+                <option value="8. Tdk. diaplikasikan">8. Tdk. diaplikasikan</option>                
+            </select>
+            </div>    
+          </div>
+          <div class="row mb-3">
+            <label for="jmlh" class="col-sm-2 col-form-label">Jumlah</label>
+            <div class="col-6 col-sm-3">
+              <input type="text" class="form-control" id="jmlh" name="jmlh">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="tgl_dg" class="col-sm-2 col-form-label">Tanggal Diagnosis</label>
+            <div class="col-6 col-sm-3">
+              <input type="date" class="form-control" id="tgl_dg" name="tgl_dg">
+            </div>
+          </div>
+          </div>
+          <div class="card-footer text-body-secondary bg-primary-subtle">            
+          </div>
+        </div>
+
+        <!-- As a heading -->
+        <br>
+        <div class="card">
+        <div class="card-header text-center bg-primary-subtle">
+          <b>DATA SUMBER/FOLLOW UP DPJP</b> 
+        </div>
+        <br>
+        <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th class="table-secondary" scope="col">Tgl. Periksa</th>
+              <th class="table-secondary" scope="col">Nama Rumah Sakit</th>
+              <th class="table-secondary" scope="col">Kode Rumah Sakit</th>
+              <th class="table-secondary" scope="col">Unit ID</th>
+              <th class="table-secondary" scope="col">Unit</th>
+              <th class="table-secondary" scope="col">No. PA/LAB</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Kesimpulan</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" id="ksmpln" name="ksmpln"></textarea>
+        </div>
+        <div class="row mb-3">
+          <label for="tglmasuk" class="col-sm-2 col-form-label">Tanggal Masuk</label>
+            <div class="col-2">
+              <input type="date" class="form-control" id="tglmasuk" name="tgl_msk">
+            </div>
+            <label for="nmregister" class="col-sm-2 col-form-label">Nama Register</label>
+            <div class="col-2">
+              <input type="text" class="form-control" id="nmregister" name="nmregister">
+            </div>
+            <label for="nmregister" class="col-sm-2 col-form-label">Nama Verifikator</label>
+            <div class="col-2 ">
+              <input type="text" class="form-control" id="nmverifikator" name="nmverifikator">
+            </div>
+        </div>
+        <div class="row mb-3">
+          <label for="tglkontaktrkhir" class="col-sm-2 col-form-label">Tgl.kontak terakhir</label>
+            <div class="col-2">
+              <input type="date" class="form-control" id="tgl_kntk_trkhr" name="tgl_kntk_trkhr">
+            </div>
+          <label for="tglabstraksi" class="col-sm-2 col-form-label">Tgl.abstraksi</label>
+            <div class="col-2">
+              <input type="date" class="form-control" id="tglabstraksi" name="tglabstraksi">
+            </div>
+          <label for="tglverifikator" class="col-sm-2 col-form-label">Tgl.verifikator</label>
+            <div class="col-2">
+              <input type="date" class="form-control" id="tglverifikator" name="tglverifikator">
+            </div>
+        </div>
+        <div class="row mb-3">
+          <label for="stts" class="col-sm-2 col-form-label">Status</label>
+            <div class="col-6 col-sm-3">
+              <select class="form-select" id="stts" name="stts">
+                  <option value="Hidup">Hidup</option>
+                  <option value="Meninggal">Meninggal</option>
+                  <option value="Tidak diketahui">Tidak diketahui</option>
+              </select>
+            </div>    
+        </div>
+        </div>
+        <div class="card card-footer text-body-secondary">         
+          <p class="text-center"><input class="btn btn-primary" type="submit" value="SIMPAN"></p>
+        </div>
+      </div>          
+      </form>
+      </div>
+    </body>
+</html>
